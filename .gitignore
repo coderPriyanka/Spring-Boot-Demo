@@ -1,7 +1,9 @@
 /target/
-!.mvn/wrapper
-!.mvnw
-!.mvnw.cmd
+.mvn/wrapper
+.mvnw
+.mvnw.cmd
+.DS_Store
+.help.md
 
 ### STS ###
 .apt_generated
