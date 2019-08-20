@@ -29,9 +29,7 @@ public class StudentController {
 	
 	@GetMapping("/roll/{roll}")
 	public Student getStudentByRoll(@PathVariable final Integer roll) {
-		Student student = studentService.getStudentById(roll);
-		System.out.println(student);
-		return student;
+		return studentService.getStudentById(roll);
 	}
 	
 	@GetMapping("/firstname/{firstName}")
