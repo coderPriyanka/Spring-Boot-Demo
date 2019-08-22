@@ -63,7 +63,10 @@ public class StudentService {
 	}
 
 	public void deleteStudent(Integer roll) {
-		studentRepository.deleteById(roll);
+		Optional<StudentEntity> studentEntity = studentRepository.findById(roll);
+		if(studentEntity.isPresent()) {
+			studentRepository.delete(studentEntity.get());
+		}
 	}
 
 	public void updateDepartment(Integer roll, String department) {
