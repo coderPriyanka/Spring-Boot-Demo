@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.myproject.model.Student;
 import com.myproject.service.StudentService;
-//This is a Student Controller
+
 @RestController
 @RequestMapping("/students")
 public class StudentController {
